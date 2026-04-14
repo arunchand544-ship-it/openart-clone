@@ -1,4 +1,6 @@
 
+const API_URL = "https://openart-clone.onrender.com/generate";
+
 async function generate() {
   console.log("Generate clicked");
 
