@@ -16,6 +16,7 @@ async function generate() {
   });
 
   const data = await res.json();
+
   document.getElementById("result").src =
     "data:image/png;base64," + data.image;
 }
