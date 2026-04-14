@@ -1,5 +1,5 @@
 
-const API_URL = "https://YOUR-BACKEND-URL.onrender.com/generate";
+const API_URL = "https://openart-clone.onrender.com/generate";
 
 async function generate() {
   const prompt = document.getElementById("prompt").value;
