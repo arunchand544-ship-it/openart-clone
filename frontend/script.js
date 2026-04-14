@@ -1,13 +1,9 @@
 
-const API_URL = "https://openart-clone.onrender.com/generate";
-
 async function generate() {
-  const prompt = document.getElementById("prompt").value;
+  console.log("Generate clicked");
 
-  if (!prompt) {
-    alert("Please enter a prompt");
-    return;
-  }
+  const prompt = document.getElementById("prompt").value;
+  console.log("Prompt:", prompt);
 
   const res = await fetch(API_URL, {
     method: "POST",
@@ -15,7 +11,10 @@ async function generate() {
     body: JSON.stringify({ prompt })
   });
 
+  console.log("Response status:", res.status);
+
   const data = await res.json();
+  console.log("Response data:", data);
 
   document.getElementById("result").src =
     "data:image/png;base64," + data.image;
