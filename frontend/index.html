@@ -24,12 +24,6 @@
       margin-left: 10px;
       cursor: pointer;
     }
-
-    img {
-      margin-top: 20px;
-      max-width: 512px;
-      border: 1px solid #444;
-    }
   </style>
 </head>
 
@@ -39,11 +33,21 @@
   <input id="prompt" placeholder="Describe your image..." />
   <button onclick="generate()">Generate</button>
 
-  <div>
-    <img id="result" width="200" height="200" />
-  </div>
+  <!-- ✅ ADD IMAGE HERE -->
+  <img
+    id="result"
+    width="512"
+    height="512"
+    style="
+      background: #fff;
+      border: 2px solid #555;
+      margin-top: 20px;
+      object-fit: contain;
+    "
+    alt="Generated image"
+  />
 
-  <!-- ✅ THIS LINE MUST EXIST EXACTLY LIKE THIS -->
+  <!-- ✅ SCRIPT MUST BE LAST -->
   <script src="script.js"></script>
 </body>
 </html>
