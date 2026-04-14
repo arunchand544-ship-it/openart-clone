@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OpenArt Clone</title>
+
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+    }
+    input {
+      padding: 10px;
+      width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 512px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>AI Image Generator</h1>
+
+  <input id="prompt" placeholder="Describe your image..." />
+  <button onclick="generate()">Generate</button>
+
+  <div>
+    <img id="result" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+``
